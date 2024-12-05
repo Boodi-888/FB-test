@@ -1,0 +1,88 @@
+my html <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <style>
+    body {
+      background-color: #ffe6f7; /* Soft pink background */
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-container {
+      background-color: #fff;
+      border: 2px solid #ff69b4; /* Hot pink outline */
+      border-radius: 10px;
+      width: 300px;
+      padding: 20px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+    .login-container h2 {
+      color: #ff1493; /* Deep pink text */
+      margin-bottom: 20px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      font-weight: bold;
+      color: #ff69b4;
+    }
+    input[type="text"], input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ff69b4;
+      border-radius: 5px;
+      outline: none;
+    }
+    input[type="submit"] {
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    input[type="submit"]:hover {
+      background-color: #ff1493;
+    }
+    .footer {
+      margin-top: 10px;
+      font-size: 12px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+      <input type="submit" value="Login">
+    </form>
+    <div class="footer">
+      <p>Welcome to our girly login page! 🌸</p>
+    </div>
+  </div>
+</body>
+</html>
